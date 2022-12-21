@@ -2,8 +2,9 @@ import {ThemeProvider} from "../context/theme";
 
 import Base from "./frontend/base";
 
-import "antd/dist/reset.css"
-import "../public/css/custom.css"
+// import "antd/dist/reset.css"
+import "../public/css/styles.css";
+import "../public/css/custom.css";
 
 
 function MyApp({Component, pageProps})

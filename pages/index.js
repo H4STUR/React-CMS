@@ -5,8 +5,8 @@ function Home()
 {
     return(
         <div>
-            <h1>Home</h1>
-            <Button type="primary">CLICK</Button>
+            <h1>Home Page</h1>
+            {/* <Button type="primary">CLICK</Button> */}
             <br/>
         </div>
     );

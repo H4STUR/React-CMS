@@ -1,9 +1,9 @@
-import TopNav from "../../components/TopNav";
+import AdminTopNav from "../../components/nav/AdminTopNav";
 
 const Base = () =>
 {
     return(
-        <TopNav />
+        <AdminTopNav />
     );
 };
 
