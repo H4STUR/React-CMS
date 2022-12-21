@@ -1,7 +1,8 @@
 import {useState} from "react";
 import ToggleTheme from "../ToggleTheme"
 import {Menu} from "antd";
-import { MailOutlined, LogoutOutlined, LoginOutlined } from "@ant-design/icons";
+import Link from "next/link";
+import { MailOutlined, LogoutOutlined, LoginOutlined, UserAddOutlined} from "@ant-design/icons";
 import React from "react";
 
 const {SubMenu} = Menu;
@@ -21,14 +22,17 @@ const AdminTopNav = () =>
     return (
         <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
             <Menu.Item key="dashboard" >
-                Admin Dashboard
+                <Link href="/admin">Admin Dashboard</Link>
             </Menu.Item>
 
+            <Menu.Item key="signup" icon={<UserAddOutlined />}>
+                <Link href="/signup">Signup</Link>
+            </Menu.Item>
             <Menu.Item key="login" icon={<LoginOutlined />}>
-                Login
+                <Link href="/signin">Signin</Link>
             </Menu.Item>
             <Menu.Item key="logout" icon={<LogoutOutlined />}>
-                Logout
+                <Link href="">Logout</Link>
             </Menu.Item>
 
             {/* <SubMenu key="SubMenu" icon={<SettingOutlined />} title="Navigation Three - Submenu">

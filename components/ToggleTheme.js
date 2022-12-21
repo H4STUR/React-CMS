@@ -16,8 +16,7 @@ const ToggleTheme = () =>
                     {
                         setTheme("dark");
                         localStorage.setItem("theme", "dark");
-                    }} 
-                    style={{ fontSize: "24px" }}>🌚</span>
+                    }} style={{ fontSize: "24px" }}>🌚</span>
             ) : (
                 <span onClick={() => 
                     {
@@ -25,7 +24,6 @@ const ToggleTheme = () =>
                         localStorage.setItem("theme", "light");
                     }} style={{ fontSize: "24px" }}>🌞</span>
             )}
-            
             
         </div>
     </>

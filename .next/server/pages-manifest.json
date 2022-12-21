@@ -2,8 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/admin/media/showMedia": "pages/admin/media/showMedia.js",
-  "/admin/media/showmedia": "pages/admin/media/showmedia.js",
-  "/admin/sites/settings": "pages/admin/sites/settings.js",
-  "/admin": "pages/admin.js"
+  "/signin": "pages/signin.js"
 }
