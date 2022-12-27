@@ -1,4 +1,5 @@
 import { Layout } from "antd";
+import { Empty } from 'antd';
 
 import AdminLayout from "../../../components/layout/AdminLayout";
 
@@ -8,10 +9,11 @@ function Settings()
 {
     return(
     <AdminLayout>
-        <h1> Admin Settings</h1>
+        <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} style={{ "marginTop": "200px"}}/>
     </AdminLayout>
     );
     
 }
 
 export default Settings;
+

@@ -1,4 +1,5 @@
 import { Layout } from "antd";
+import { Empty } from 'antd';
 
 import AdminLayout from "../../../components/layout/AdminLayout";
 
@@ -8,10 +9,10 @@ function ShowMedia()
 {
     return(
     <AdminLayout>
-        <h1> ShowMedia</h1>
-    </AdminLayout>
+<Empty image={Empty.PRESENTED_IMAGE_SIMPLE} style={{ "marginTop": "200px"}}/>    </AdminLayout>
     );
     
 }
 
 export default ShowMedia;
+

@@ -1,4 +1,6 @@
 import { Layout } from "antd";
+import { Empty } from 'antd';
+
 
 import AdminLayout from "../../../components/layout/AdminLayout";
 
@@ -8,10 +10,11 @@ function Boosters()
 {
     return(
     <AdminLayout>
-        <h1> All Boosters</h1>
+        <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} style={{ "marginTop": "200px"}}/>
     </AdminLayout>
     );
     
 }
 
 export default Boosters;
+
