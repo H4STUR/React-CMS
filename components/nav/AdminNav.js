@@ -45,7 +45,7 @@ const AdminNav = () =>
         <Menu defaultOpenKeys={["sub1", "sub2"]} mode="inline" theme="dark" inlineCollapsed={collapsed}>
 
             <Menu.Item key="1" icon={<DashboardOutlined />}> <Link href="/admin" className={activeName("/admin")}> Dashboard </Link></Menu.Item>
-            <Menu.Item key="2" icon={<UserOutlined />}> <Link href="/admin/users/users" className={activeName("/admin/users/users")}>Users</Link></Menu.Item>
+            <Menu.Item key="2" icon={<UserOutlined />}> <Link href="/admin/users" className={activeName("/admin/users/users")}>Users</Link></Menu.Item>
             <Menu.Item key="3" icon={<WechatOutlined />}> <Link href="/admin/sites/livechat" className={activeName("/admin/sites/livechat")}>LiveChat</Link></Menu.Item>
 
 

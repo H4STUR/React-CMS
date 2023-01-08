@@ -9,18 +9,28 @@ import {useState} from "react";
 function Signup()
 {
 
-    const onFinish = (values) => {
-        console.log("Values => ", values);
-        // const username = values.target.username;
-        //  console.log("username => ", values['username']);
+    const onFinish = async (values) => {
+    console.log("Values => ", values);
 
-         axios.post(process.env.SERVER, values,
-            {
-                withCredentials: true,
-            }).then(function(response)
-         {
+    axios.get(process.env.SERVER+"auth.php", values,
+        {
+            withCredentials: true,
+        }).then(response => {
             console.log(response.data);
-         });
+          })
+          .catch(error => {
+            console.log(error);
+          });
+
+    // axios.post(process.env.SERVER, values,
+    //         {
+    //             withCredentials: true,
+    //         }).then(response => {
+    //             console.log(response.data);
+    //           })
+    //           .catch(error => {
+    //             console.log(error);
+    //           });
     };
 
 
