@@ -1,23 +1,26 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import SitesRoutes from "./SitesRoutes"
+import { Dynamic, BrowserRouter, Routes, Route } from 'react-router-dom';
 
-//templates
-import HomePage from "../../pages/frontend/sites/homePage";
-function BaseRoutes()
-{
-    return(
-    <BrowserRouter>
-        <Routes>
-            {/* BASE ACTIONS */}
-            <Route index element={<HomePage />} />
-            {/* USERS ACTIONS */}
+function BaseRoutes() {
+  console.log('Routes');
+  return (
+    <Dynamic import={() => import('react-router-dom')}>
+      {(ReactRouter) => {
+        const { BrowserRouter, Routes, Route } = ReactRouter;
+        return (
+          <BrowserRouter>
+            <Routes>
+              {/* BASE ACTIONS */}
+              {/* <Route index element={<HomePage />} /> */}
+              {/* USERS ACTIONS */}
 
-            {/* SITES ACTIONS */}
-            {/* <SitesRoutes /> */}
-        </Routes>
-    </BrowserRouter>
-    );
-    
+              {/* SITES ACTIONS */}
+              {/* <SitesRoutes /> */}
+            </Routes>
+          </BrowserRouter>
+        );
+      }}
+    </Dynamic>
+  );
 }
 
 export default BaseRoutes;

@@ -1,5 +1,4 @@
 import {ThemeProvider} from "../context/theme";
-
 import Base from "./frontend/base";
 
 // import "antd/dist/reset.css"

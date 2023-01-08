@@ -32,15 +32,26 @@ const {
       })(),
 
 
-//DATABASE
+    //DATABASE
       SERVER: (() => {return 'https://flyboost.agares.uk/database/'})(),
       DBNAME: (() => {return 'agarsjee_flyboost'})(),
       USER: (() => {return 'agarsjee_root'})(),
       PASSWORD: (() => {return 'databasepassword'})(),
+
+    //AUTH
+      JWT_SECRET:(() => {return 'Ecn3c8QGgp6KsAMN'})(),
+
+    //PAYMENTS
+      PAYPAL_TOKEN:(() => {return 'access_token$sandbox$z29jpj5m8y4xqmmt$3818fc20e76595407edbcbd3dfa40a2e'})(),
+
     }
+
+    
   
     // next.config.js object
     return {
       env,
     }
   }
+
+  
